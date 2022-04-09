@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import model.Person;
+import org.springframework.web.servlet.ModelAndView;
 import service.PersonService;
 
 @CrossOrigin
@@ -29,5 +30,7 @@ public class PersonController {
 	public Person getPerson(@PathVariable("id") String id) {
 		return ps.getPerson(id);
 	}
+
+
 }
 
